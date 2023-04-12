@@ -13,7 +13,3 @@ export function addFullName<T extends NameFields>(obj: T): T & { fullName: strin
     fullName: `${obj.firstName} ${obj.lastName}`
   }
 }
-
-
-
-
