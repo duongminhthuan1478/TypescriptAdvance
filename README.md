@@ -44,3 +44,5 @@ type PersonType = keyof Person;  // 'name' | 'age'
 function log(param: PersonType) { }
 log('age'); //Only allow key property of Person, if not match, syntax error exist
 ```
+
+See another example [here](/src/keyof/person.keyof.ts)
