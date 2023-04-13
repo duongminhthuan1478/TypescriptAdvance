@@ -53,3 +53,7 @@ See another example [here](/src/keyof/person.keyof.ts)
 type NoEmpty<T> = T extends null | undefined ? never : T;
 ```
 See another example [here](/src/conditionals/conditional-type.ts)
+
+
+### 'infer':  keyword that can be used within a condition in a conditional type to put the inferred type into a variable
+See example [here](/src/infers/infer.ts)
