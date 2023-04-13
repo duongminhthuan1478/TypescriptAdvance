@@ -46,3 +46,10 @@ log('age'); //Only allow key property of Person, if not match, syntax error exis
 ```
 
 See another example [here](/src/keyof/person.keyof.ts)
+
+### Conditional Type: using 'extends'
+
+```
+type NoEmpty<T> = T extends null | undefined ? never : T;
+```
+See another example [here](/src/conditionals/conditional-type.ts)
