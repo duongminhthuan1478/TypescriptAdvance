@@ -35,6 +35,10 @@ applyButtonStyle('medium-primary');
 // applyButtonStyle('medi-primary') //Error typo type
 ```
 
+- Partial<T>: Make properties in an object optional => we can update only one property, no need to fully update
+  + [Simple example with partial](/src/types/super/partial.type.ts)
+  + [Obeservable type example with partial, overload in Observable.subscribe()](/src/types/super/example-rxjs.type.ts)
+
 ### Convention naming for generic type like K, V, T, and E
 Actually, you can use arbitrary naming for generic, but we have a convention for developers can more understand what the type which you represented
 - K, V (Key, Value): represents the type of key, value in the object
