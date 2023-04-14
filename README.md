@@ -37,7 +37,10 @@ applyButtonStyle('medium-primary');
 
 - Partial<T>: Make properties in an object optional => we can update only one property, no need to fully update
   + [Simple example with partial](/src/types/super/partial.type.ts)
-  + [Obeservable type example with partial, overload in Observable.subscribe()](/src/types/super/example-rxjs.type.ts)
+  + [Observable type example with partial, overload in Observable.subscribe()](/src/types/super/example-rxjs.type.ts)
+
+- Difference Union and Intersection
+![Difference Union and Intersection](src/assets/union-intersection.png)
 
 ### Convention naming for generic type like K, V, T, and E
 Actually, you can use arbitrary naming for generic, but we have a convention for developers can more understand what the type which you represented
@@ -81,3 +84,14 @@ See another example [here](/src/conditionals/conditional-type.ts)
 
 ### infer:  keyword that can be used within a condition in a conditional type to put the inferred type into a variable
 See example [here](/src/infers/infer.ts)
+
+### Typescript Enums are bad, using type instead
+For most reason
+ 1. Error, must be import
+ 2. Need to declare a value to avoid break down system if anyone adding a new enum no in order
+
+[Refer]https://dev.to/dvddpl/whats-the-problem-with-typescript-enums-2okj
+
+See example [here](/src/types//replace-enum-with-type.ts)
+
+![type suggestion](src/assets/ad-type.png)
